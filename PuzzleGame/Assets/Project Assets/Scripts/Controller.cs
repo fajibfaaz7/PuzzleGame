@@ -44,12 +44,15 @@ public class Controller : MonoBehaviour
                     if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.5f &&
                     Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.5f)
                     {
-                        transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
+                        //transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
+                        transform.position = targetPos.position;
                     }
 
                     else
                     {
-                        transform.position = new Vector2(_initialPos.x, _initialPos.y);
+                        //transform.position = new Vector2(_initialPos.x, _initialPos.y);
+                        transform.position = _initialPos;
+                        
                     }
                     break;
             }
