@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    //public List<GameObject> spritesBG;
-    //public List<GameObject> sprites;
-
     private Vector2 _initialPos;
     public Transform targetPos;
     private float _deltaX, _deltaY;
+    private Collider2D collider2D;
 
     void Start()
     {
+        collider2D = GetComponent<Collider2D>();
+        collider2D.enabled = true;
         _initialPos = transform.position;
     }
 
@@ -41,17 +41,19 @@ public class Controller : MonoBehaviour
                     break;
 
                 case TouchPhase.Ended:
-                    if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.5f &&
-                    Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.5f)
+                    if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.9f &&
+                    Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.9f)
                     {
-                        //transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
-                        transform.position = targetPos.position;
+                        transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
+                        //transform.position = targetPos.position;
+                        collider2D.enabled = false;
+                        
                     }
 
                     else
                     {
-                        //transform.position = new Vector2(_initialPos.x, _initialPos.y);
-                        transform.position = _initialPos;
+                        transform.position = new Vector2(_initialPos.x, _initialPos.y);
+                        //transform.position = _initialPos;
                         
                     }
                     break;
