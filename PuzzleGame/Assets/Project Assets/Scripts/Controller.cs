@@ -7,12 +7,12 @@ public class Controller : MonoBehaviour
     private Vector2 _initialPos;
     public Transform targetPos;
     private float _deltaX, _deltaY;
-    private Collider2D collider2D;
+    private Collider2D collider2;
 
     void Start()
     {
-        collider2D = GetComponent<Collider2D>();
-        collider2D.enabled = true;
+        collider2 = GetComponent<Collider2D>();
+        collider2.enabled = true;
         _initialPos = transform.position;
     }
 
@@ -46,7 +46,7 @@ public class Controller : MonoBehaviour
                     {
                         transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
                         //transform.position = targetPos.position;
-                        collider2D.enabled = false;
+                        collider2.enabled = false;
                         
                     }
 
