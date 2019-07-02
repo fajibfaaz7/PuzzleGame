@@ -8,6 +8,7 @@ public class Controller : MonoBehaviour
     public Transform targetPos;
     private float _deltaX, _deltaY;
     private Collider2D collider2;
+    
 
     void Start()
     {
@@ -60,6 +61,8 @@ public class Controller : MonoBehaviour
             }
 
         }
+
+        
     }
 }
 

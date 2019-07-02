@@ -15,6 +15,7 @@ public class SceneFader : MonoBehaviour
     }
     public void FadeTo(string scene)
     {
+        Time.timeScale = 1f;
         StartCoroutine(FadeOut(scene));
     }
 
