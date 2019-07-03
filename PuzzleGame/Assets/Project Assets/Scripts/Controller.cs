@@ -8,6 +8,12 @@ public class Controller : MonoBehaviour
     public Transform targetPos;
     private float _deltaX, _deltaY;
     private Collider2D collider2;
+
+    public GameManager gameManager;
+
+    public bool isFitted = false;
+    public int count = 0;
+
     
 
     void Start()
@@ -17,8 +23,12 @@ public class Controller : MonoBehaviour
         _initialPos = transform.position;
     }
 
+   
+
+
     private void Update()
     {
+        
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -42,13 +52,16 @@ public class Controller : MonoBehaviour
                     break;
 
                 case TouchPhase.Ended:
-                    if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.9f &&
-                    Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.9f)
+                    if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.04f &&
+                    Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.04f)
                     {
                         transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
                         //transform.position = targetPos.position;
                         collider2.enabled = false;
-                        
+ 
+                       
+                            isFitted = true;
+ 
                     }
 
                     else
@@ -62,6 +75,23 @@ public class Controller : MonoBehaviour
 
         }
 
+        if(isFitted == true)
+        {
+            count++;
+            Debug.Log(count);
+        }
+        if (count < gameManager.spLength)
+        {
+            isFitted = false;
+        }
+
+
+        if (count == gameManager.spLength + 1)
+        {
+            gameManager.WinLevel();
+            isFitted = false;
+            count = 0;
+        }
         
     }
 }

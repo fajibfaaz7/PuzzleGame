@@ -9,13 +9,11 @@ public class GameManager : MonoBehaviour
     public GameObject[] spritesOcc;
     public int spLength;
     public int nextLevel;
-    public string nextLevelName;
-    public int count;
+    //public string nextLevelName;
+    //public int count;
+    public GameObject winCanvas;
     
 
-
-    
-    public SceneFader sceneFader;
 
     private void Start()
     {
@@ -24,14 +22,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0, j = 0; i < spLength && j < spLength; i++, j++)
-        {
-            if(sprites[i].transform.position == spritesOcc[j].transform.position)
-            {
+        //for (int i = 0, j = 0; i < spLength && j < spLength; i++, j++)
+        //{
+        //    if(sprites[i].transform.position == spritesOcc[j].transform.position)
+        //    {
                   
-            }
-        }
-
+        //    }
+        //}
+       
         
     }
 
@@ -40,6 +38,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Won");
         //PlayerPrefs.SetInt("levelReached", nextLevel);
-        //sceneFader.FadeTo(nextLevelName);
+        winCanvas.SetActive(true);
     }
 }
