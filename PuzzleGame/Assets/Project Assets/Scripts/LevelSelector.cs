@@ -5,6 +5,7 @@ public class LevelSelector : MonoBehaviour
 {
     public SceneFader fader;
     public Button[] levelButtons;
+    public Sprite unSprite;
 
 
     private void Start()
@@ -15,6 +16,10 @@ public class LevelSelector : MonoBehaviour
             if (i + 1 > levelReached)
             {
                 levelButtons[i].interactable = false;
+            }
+            else
+            {
+                levelButtons[i].image.sprite = unSprite;
             }
         }
     }

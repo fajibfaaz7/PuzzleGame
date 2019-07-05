@@ -769,8 +769,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1488164311}
   - component: {fileID: 1488164310}
-  - component: {fileID: 1488164312}
   - component: {fileID: 1488164313}
+  - component: {fileID: 1488164312}
   m_Layer: 0
   m_Name: Tiger
   m_TagString: Untagged
@@ -850,11 +850,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1488164309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4204fb76367e3a14499d937d19643253, type: 3}
+  m_Script: {fileID: 11500000, guid: c9e3d5fab64aec745956280e97db5e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 162548198}
-  gameManager: {fileID: 4114039659628904909}
 --- !u!61 &1488164313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -971,8 +970,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1726884426}
   - component: {fileID: 1726884425}
-  - component: {fileID: 1726884427}
   - component: {fileID: 1726884428}
+  - component: {fileID: 1726884427}
   m_Layer: 0
   m_Name: MonkeySit
   m_TagString: Untagged
@@ -1052,11 +1051,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1726884424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4204fb76367e3a14499d937d19643253, type: 3}
+  m_Script: {fileID: 11500000, guid: 493944bce9567d34a919833c67dc6d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 1872543753}
-  gameManager: {fileID: 4114039659628904909}
 --- !u!61 &1726884428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1419,8 +1417,22 @@ PrefabInstance:
       propertyPath: fader
       value: 
       objectReference: {fileID: 1772196249}
+    - target: {fileID: 1935091668, guid: 6f2c486e7ad387948a2ccf644ba69183, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1772196249}
+    - target: {fileID: 1935091668, guid: 6f2c486e7ad387948a2ccf644ba69183, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeTo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2c486e7ad387948a2ccf644ba69183, type: 3}
+--- !u!1 &1755769595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6054362447462108799, guid: 6f2c486e7ad387948a2ccf644ba69183,
+    type: 3}
+  m_PrefabInstance: {fileID: 1755769594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1768591752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,11 +1718,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889858782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4204fb76367e3a14499d937d19643253, type: 3}
+  m_Script: {fileID: 11500000, guid: cda9ec61487883f43a67dc8d7668e837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 132514571}
-  gameManager: {fileID: 4114039659628904909}
 --- !u!61 &1889858786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1737,6 +1748,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.849998, y: 28.515444}
   m_EdgeRadius: 0
+--- !u!1 &1970072367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970072369}
+  - component: {fileID: 1970072368}
+  m_Layer: 0
+  m_Name: Level3Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1970072368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970072367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7534a123dcd95474daf67d513b3bed41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 4114039659628904909}
+--- !u!4 &1970072369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970072367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 509.9924, y: 296.46432, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4114039659628904908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1849,6 +1904,11 @@ PrefabInstance:
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 1772196249}
+    - target: {fileID: 4114039659033776634, guid: 7583e4acd79d53c46adfb77c98b378cf,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 1755769595}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7583e4acd79d53c46adfb77c98b378cf, type: 3}
 --- !u!114 &4114039659628904909 stripped

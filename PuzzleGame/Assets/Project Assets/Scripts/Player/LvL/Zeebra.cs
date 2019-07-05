@@ -2,30 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controller : MonoBehaviour
+public class Zeebra : MonoBehaviour
 {
     private Vector2 _initialPos;
     public Transform targetPos;
     private float _deltaX, _deltaY;
     private Collider2D collider2;
-    public bool isLocked = false;
+    public static bool isLocked;
 
 
 
     void Start()
     {
+        isLocked = false;
         collider2 = GetComponent<Collider2D>();
         collider2.enabled = true;
         _initialPos = transform.position;
     }
 
-   
+
 
 
     private void Update()
     {
-        
-        if (Input.touchCount > 0)
+
+        if (Input.touchCount > 0 && !isLocked)
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
@@ -48,30 +49,27 @@ public class Controller : MonoBehaviour
                     break;
 
                 case TouchPhase.Ended:
-                    if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.1f &&
-                    Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.1f)
+                    if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.5f &&
+                    Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.5f)
                     {
                         transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
                         //transform.position = targetPos.position;
                         collider2.enabled = false;
- 
-                        
- 
+                        isLocked = true;
                     }
 
                     else
                     {
                         transform.position = new Vector2(_initialPos.x, _initialPos.y);
                         //transform.position = _initialPos;
-                        
+
                     }
                     break;
             }
 
         }
 
-       
-        
+
+
     }
 }
-
