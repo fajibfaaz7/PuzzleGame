@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class LevelSelector : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class LevelSelector : MonoBehaviour
             else
             {
                 levelButtons[i].image.sprite = unSprite;
+                //StartCoroutine(Unlock(i));
             }
         }
     }
@@ -27,4 +29,10 @@ public class LevelSelector : MonoBehaviour
     {
         fader.FadeTo(levelName);
     }
+
+    //IEnumerator Unlock(int i)
+    //{
+    //    yield return new WaitForSeconds(.9f);
+    //    levelButtons[i].image.sprite = unSprite;
+    //}
 }
