@@ -9,6 +9,7 @@ public class Tortoise : MonoBehaviour
     private float _deltaX, _deltaY;
     private Collider2D collider2;
     public static bool isLocked;
+    public AudioManager manager;
 
 
 
@@ -56,6 +57,7 @@ public class Tortoise : MonoBehaviour
                         //transform.position = targetPos.position;
                         collider2.enabled = false;
                         isLocked = true;
+                        manager.Play("PutSound");
                     }
 
                     else

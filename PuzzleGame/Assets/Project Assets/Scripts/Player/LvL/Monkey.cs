@@ -9,7 +9,7 @@ public class Monkey : MonoBehaviour
     private float _deltaX, _deltaY;
     private Collider2D collider2;
     public static bool isLocked;
-
+    public AudioManager manager;
 
 
     void Start()
@@ -56,6 +56,7 @@ public class Monkey : MonoBehaviour
                         //transform.position = targetPos.position;
                         collider2.enabled = false;
                         isLocked = true;
+                        manager.Play("PutSound");
                     }
 
                     else

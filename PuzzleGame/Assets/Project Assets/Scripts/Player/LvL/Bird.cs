@@ -9,6 +9,7 @@ public class Bird : MonoBehaviour
     private float _deltaX, _deltaY;
     private Collider2D collider2;
     public static bool isLocked;
+    public AudioManager manager;
 
 
 
@@ -52,16 +53,16 @@ public class Bird : MonoBehaviour
                     if (Mathf.Abs(transform.position.x - targetPos.position.x) <= 0.5f &&
                     Mathf.Abs(transform.position.y - targetPos.position.y) <= 0.5f)
                     {
-                        transform.position = new Vector2(targetPos.position.x, targetPos.position.y);
-                        //transform.position = targetPos.position;
+                        transform.position = new Vector2(targetPos.position.x, targetPos.position.y);  
                         collider2.enabled = false;
                         isLocked = true;
+                        manager.Play("PutSound");   
                     }
 
                     else
                     {
                         transform.position = new Vector2(_initialPos.x, _initialPos.y);
-                        //transform.position = _initialPos;
+                   
 
                     }
                     break;

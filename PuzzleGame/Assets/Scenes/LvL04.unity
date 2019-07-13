@@ -409,6 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 1453049881}
+  manager: {fileID: 730904422}
 --- !u!61 &478855464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1089,6 +1090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 140310450}
+  manager: {fileID: 730904422}
 --- !u!61 &588974991
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1164,6 +1166,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &730904421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7846738137851727716, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846738137851727718, guid: 0e100b2bc460c204eb35283af5d2b29a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e100b2bc460c204eb35283af5d2b29a, type: 3}
+--- !u!114 &730904422 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7846738137851727717, guid: 0e100b2bc460c204eb35283af5d2b29a,
+    type: 3}
+  m_PrefabInstance: {fileID: 730904421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f206a7ef5a10ff4d880d31aa5ebc847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &771464024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +2079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 446642186}
+  manager: {fileID: 730904422}
 --- !u!61 &1855400000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2117,6 +2201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 771464025}
+  manager: {fileID: 730904422}
 --- !u!61 &1971833163
 BoxCollider2D:
   m_ObjectHideFlags: 0

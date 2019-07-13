@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         if (!isStopped)
         {
             time += Time.deltaTime;
-        }
+        } 
         Debug.Log(time);
     }
 

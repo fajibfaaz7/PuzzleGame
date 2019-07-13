@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2580894984665384033}
   - component: {fileID: 2580894984665384038}
   - component: {fileID: 2580894984665384039}
+  - component: {fileID: 4552381645695365082}
   m_Layer: 5
   m_Name: LevelButton
   m_TagString: Untagged
@@ -148,3 +149,16 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.26666668}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+--- !u!114 &4552381645695365082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580894984665384037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e230c31f74018404e95995e397ab32bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: fe9eb9077ae3a204eb952a3d055e9861, type: 3}
