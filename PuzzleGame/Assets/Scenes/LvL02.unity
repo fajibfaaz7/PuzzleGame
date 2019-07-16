@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1335739365}
+  isTaken: 0
 --- !u!4 &125732082
 Transform:
   m_ObjectHideFlags: 0
@@ -1028,6 +1029,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 736548212}
+    - target: {fileID: 6054362447462108792, guid: 6f2c486e7ad387948a2ccf644ba69183,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1474178977}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2c486e7ad387948a2ccf644ba69183, type: 3}
 --- !u!1 &1308386119 stripped
@@ -1045,6 +1051,12 @@ GameObject:
 --- !u!1 &1308386121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6054362448350465993, guid: 6f2c486e7ad387948a2ccf644ba69183,
+    type: 3}
+  m_PrefabInstance: {fileID: 1308386118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1308386122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1719858459736837304, guid: 6f2c486e7ad387948a2ccf644ba69183,
     type: 3}
   m_PrefabInstance: {fileID: 1308386118}
   m_PrefabAsset: {fileID: 0}
@@ -1150,6 +1162,21 @@ PrefabInstance:
       propertyPath: star2
       value: 
       objectReference: {fileID: 1308386120}
+    - target: {fileID: 4114039659033776634, guid: 7583e4acd79d53c46adfb77c98b378cf,
+        type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 1308386122}
+    - target: {fileID: 4114039659033776634, guid: 7583e4acd79d53c46adfb77c98b378cf,
+        type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 17959552}
+    - target: {fileID: 4114039659033776634, guid: 7583e4acd79d53c46adfb77c98b378cf,
+        type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1083266992}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7583e4acd79d53c46adfb77c98b378cf, type: 3}
 --- !u!114 &1335739365 stripped

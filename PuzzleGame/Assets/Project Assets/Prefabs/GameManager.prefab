@@ -44,19 +44,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2ed92589c8edb42ae9dd7dd0f82fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  spritesOcc:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  spLength: 0
-  nextLevel: 4
-  nextLevelName: LvL04
-  count: 0
-  sceneFader: {fileID: 0}
+  time: 0
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
+  isStopped: 0
+  particle: {fileID: 0}
+  audioManager: {fileID: 0}
+  nextLevel: 2
+  winCanvas: {fileID: 0}
 --- !u!114 &4114039659033776628
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1027,6 +1027,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6054362447462108792, guid: 6f2c486e7ad387948a2ccf644ba69183,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1272747094}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2c486e7ad387948a2ccf644ba69183, type: 3}
 --- !u!1 &800622929 stripped
@@ -1050,6 +1055,12 @@ GameObject:
 --- !u!1 &800622932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6054362448350465993, guid: 6f2c486e7ad387948a2ccf644ba69183,
+    type: 3}
+  m_PrefabInstance: {fileID: 800622928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &800622933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1719858459736837304, guid: 6f2c486e7ad387948a2ccf644ba69183,
     type: 3}
   m_PrefabInstance: {fileID: 800622928}
   m_PrefabAsset: {fileID: 0}
@@ -2362,6 +2373,21 @@ PrefabInstance:
       propertyPath: star3
       value: 
       objectReference: {fileID: 800622930}
+    - target: {fileID: 4114039659033776634, guid: 7583e4acd79d53c46adfb77c98b378cf,
+        type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 800622933}
+    - target: {fileID: 4114039659033776634, guid: 7583e4acd79d53c46adfb77c98b378cf,
+        type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1733902856}
+    - target: {fileID: 4114039659033776634, guid: 7583e4acd79d53c46adfb77c98b378cf,
+        type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1501416512}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7583e4acd79d53c46adfb77c98b378cf, type: 3}
 --- !u!114 &1683572376 stripped

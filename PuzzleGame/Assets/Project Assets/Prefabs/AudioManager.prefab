@@ -45,7 +45,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: PutSound
-    clip: {fileID: 8300000, guid: f9450236551dae6439ad540116214267, type: 3}
+    clip: {fileID: 8300000, guid: 9c8f7b4e9489ab24fb7b740b1c9bb914, type: 3}
     volume: 0.57
     pitch: 0.744
+    source: {fileID: 0}
+  - name: 3Star
+    clip: {fileID: 8300000, guid: 5ce4fcd518d6b80458f88b14ec7ed989, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: 2Star
+    clip: {fileID: 8300000, guid: 715d21d6d3f59834d857e4ec22e38e53, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: 1Star
+    clip: {fileID: 8300000, guid: c4b3ca00c4605ea498b50e57de20c200, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
