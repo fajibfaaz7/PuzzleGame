@@ -6,8 +6,10 @@ public class GlassController : MonoBehaviour
 {
     private Vector2 _initialPos;
     private float _deltaX, _deltaY;
+    public AdManager adManager;
     void Start()
     {
+        adManager = GetComponent<AdManager>();
         _initialPos = transform.position;
     }
 
@@ -37,7 +39,9 @@ public class GlassController : MonoBehaviour
                     break;
 
                 case TouchPhase.Ended:
-                        transform.position = _initialPos;
+                    transform.position = _initialPos;
+                    adManager.Glass();
+                        
                     break;
             }
 
