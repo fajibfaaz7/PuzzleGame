@@ -10,4 +10,12 @@ public class MainMenu : MonoBehaviour
     {
         sceneFader.FadeTo(levelToLoad);
     }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

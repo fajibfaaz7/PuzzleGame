@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        
         if (!isStopped)
         {
             time += Time.deltaTime;

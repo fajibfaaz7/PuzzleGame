@@ -9,15 +9,15 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
     private void Awake()
     {
-        if(audioManagerInstance == null)
-        {
-            audioManagerInstance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        DontDestroyOnLoad(gameObject);
+        //if(audioManagerInstance == null)
+        //{
+        //    audioManagerInstance = this;
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
+        //DontDestroyOnLoad(gameObject);
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
